@@ -43,7 +43,6 @@ public class LoginPageSteps extends TestBase{
 	public void user_clicks_on_login_button() {
 		loginPage = new LoginPage();
 		loginPage.clickOnLoginButton();
-	
 	}
 	
 	@Then("^user should see error message$")
@@ -52,4 +51,11 @@ public class LoginPageSteps extends TestBase{
 		Assert.assertEquals("Epic sadface: Username is required", actualErrorMsg);
 	}
 	
+	@When("^user enters username and password$")
+	public void user_enters_username_and_password() {
+		loginPage = new LoginPage();
+		loginPage.enterUsername();
+		loginPage.enterPassword();
+	}
+		
 }

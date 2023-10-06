@@ -11,7 +11,8 @@ import cucumber.api.junit.Cucumber;
 		features = "/Users/mrobi/eclipse-workspace/SwagLabsBDD/src/test/resources/Features",
 		glue = {"com.sl.steps"},
 		plugin = {"pretty", "html:target/HTMLReports"},
-		dryRun = false
+		dryRun = false,
+		tags = {"@smoke"}
 		
 		
 		)
